@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Before Shock | Laptops </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Logo small.ico" type="image/x-icon">
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+    <body>
+        <nav style="margin: 0%;">
+            <table>
+                <tr> 
+                    <td><a href="Home.html"><img src="Logo.jpeg" width="300" height="75"></a></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Home.html" >Home</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Laptop.html" class="current">Laptops</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Desktop.html">Desktops</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Accessories.html" >Accessories</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Product.html">About Us</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="aboutus.html">Contact Us</a></button></td>
+                </tr>
+            </table>
+        <h1 align="center">Best Selling Laptop</h1>
+        <!--Banner-->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="banner for latop/laptop.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="banner for latop/Untitled-1.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="banner for latop/Laptop/Lunar 14 banner.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+           
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        <script>
+            var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          
+        }
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 7000); // Change image every 7 seconds
+        }
+        </script>
+        </br>
+
+        <table align="center" border="1" cellpadding="15" style="border:1px solid rgb(87, 87, 87);border-collapse:collapse; float: left;width: 30%;">
+            <tr style="color: white;">
+                <td align="center" style="background-color: rgb(59, 59, 59); border-bottom: none;">
+                    <p style="font-size: larger;">Founder Edition Laptop(Rio)</p>
+                </td>
+            </tr>
+            <tr>
+                <Td align="center"><img src="banner for latop/00-1024x577.png" height="500" width="500"></Td><!--Use Lunar 14 Pic-->
+            </tr>
+            <tr>
+                <td style="background-color: #595959; font-size: smaller;text-align: left" class="sizingfortext">
+                    <h1 style="font-weight: bold;">
+                        Laptop Specs
+                    </h1>
+                    <p style="font-size: larger; color: white;" >
+                        2 Year Warranty<br/>
+                        RTX 3080<br/>
+                        Windows 10 Home<br/>
+                        Ryzen 9 5900H<br/>
+                        16 Inch<br/>
+                        2 TB SSD<br/>
+                        32GB RAM
+                    </p>
+                    <p style="color: white;">SGD <b style="color: red; font-weight: bold; font-size: larger; ">3200</b> </p>
+                        <a href="check out laptop/Founder Edition.html" class="select">Select</a>
+            </tr>
+        </table>
+        <table align="center" border="1" cellpadding="15" style="border:1px solid rgb(87, 87, 87);border-collapse:collapse; float: left;width: 30%;">
+            <tr style="color: white;">
+                <td align="center" style="background-color: rgb(59, 59, 59); border-bottom: none;">
+                    <p style="font-size: larger;">Zephyrus(Ultraportable Gaming)</p>
+                </td>
+            </tr>
+            <tr>
+                 <Td align="center"><img src="banner for latop/ab_asus_300320.jpg.png"  height="500" width="500"></Td><!--Use Zephyrus Pic-->
+            </tr>
+            <tr>
+                <td style="background-color: #595959; font-size: smaller;text-align: left" class="sizingfortext">
+                    <h1 style="font-weight: bold;">
+                        Laptop Specs
+                    </h1>
+                    <p style="font-size: larger; color: white;">
+                        2 Year Warranty<br/>
+                        RTX 3060<br/>
+                        Windows 10 Home<br/>
+                        Ryzen 9 5900H<br/>
+                        14 Inch<br/>
+                        1 TB SSD<br/>
+                        32GB RAM
+                    </p>
+                    <p style="color: white;">SGD <b style="color: red; font-weight: bold; font-size: larger; ">2400</b> </p>
+                        <a href="check out laptop/Zephyrus.html" class="select">Select</a>
+                </td>
+            </tr>
+        </table>
+        <table align="center" border="1" cellpadding="15" style="border:1px solid rgb(87, 87, 87);border-collapse:collapse; float: left;width: 30%;">
+            <tr style="color: white;">
+                <td align="center" style="background-color: rgb(59, 59, 59); border-bottom: none;">
+                    <p style="font-size: larger;">Lemon Shark(Budget Powerhouse)</p>
+                </td>
+            </tr>
+            <tr>
+                 <Td align="center"><img src="banner for latop/4_Apex 15X.png"  height="500" width="500"></Td><!--Use Apex 15 Pic-->
+            </tr>
+            <tr>
+                <td style="background-color: #595959; font-size: smaller;text-align: left" class="sizingfortext">
+                    <h1 style="font-weight: bold;">
+                        Laptop Specs
+                    </h1>
+                    <p style="font-size: larger; color: white;" >
+                        2 Year Warranty<br/>
+                        RTX 3050ti<br/>
+                        Windows 10 Home<br/>
+                        Ryzen 7 5800HS<br/>
+                        15 Inch<br/>
+                        1 TB SSD<br/>
+                        16GB RAM
+                    </p>
+                    <p style="color: white;">SGD <b style="color: red; font-weight: bold; font-size: larger; ">2100</b> </p>
+                    <a href="check out laptop/Lemon Shark.html" class="select">Select</a>
+                </td>
+            </tr>
+        </table>
+        <table align="center" border="1" cellpadding="15" style="border:1px solid rgb(87, 87, 87);border-collapse:collapse; float: left;width: 30%;">
+            <tr style="color: white;">
+                <td align="center" style="background-color: rgb(59, 59, 59); border-bottom: none;">
+                    <p style="font-size: larger;">Lunar 14(Ultraportable for work)</p>
+                </td>
+            </tr>
+            <tr>
+                 <Td align="center"><img src="banner for latop/Laptop/aftershock-lunar-14.png" height="500" width="500"></Td>
+            </tr>
+            <tr>
+                <td style="background-color: #595959; font-size: smaller;text-align: left" class="sizingfortext">
+                    <h1 style="font-weight: bold;">
+                        Laptop Specs
+                    </h1>
+                    <p style="font-size: larger; color: white;">
+                        2 Year Warranty<br/>
+                        Iris Xe<br/>
+                        Windows 10 Home<br/>
+                        I7-11370H<br/>
+                        14 Inch<br/>
+                        1 TB SSD<br/>
+                        16GB RAM
+                    </p>
+                    <p style="color: white;">SGD <b style="color: red; font-weight: bold; font-size: larger; ">1700</b> </p>
+                        <a href="check out laptop/Lunar 14.html" class="select">Select</a>
+                </td>
+            </tr>
+        </table>
+        <table align="center" border="1" cellpadding="15" style="border:1px solid rgb(87, 87, 87);border-collapse:collapse; float: left;width: 30%;">
+            <tr style="color: white;">
+                <td align="center" style="background-color: rgb(59, 59, 59); border-bottom: none;">
+                    <p style="font-size: larger;">Hammerhead(Built to power)</p>
+                </td>
+            </tr>
+            <tr>
+                 <Td align="center"><img src="banner for latop/Laptop/Lunar 14 banner.png"  height="500" width="500"></Td>
+            </tr>
+            <tr>
+                <td style="background-color: #595959; font-size: smaller;text-align: left" class="sizingfortext">
+                    <h1 style="font-weight: bold;">
+                        Laptop Specs
+                    </h1>
+                    <p style="font-size: larger; color: white;">
+                        2 Year Warranty<br/>
+                        RTX 3070<br/>
+                        Windows 10 Home<br/>
+                        I7-11800H<br/>
+                        16 Inch<br/>
+                        1 TB SSD<br/>
+                        16GB RAM
+                    </p>
+                    <p style="color: white;">SGD<b style="color: red; font-weight: bold; font-size: larger; ">2700</b> </p>
+                        <a href="check out laptop/Hammerhead.html" class="select">Select</a>
+                </td>
+            </tr>
+        </table>
+        <table align="center" border="1" cellpadding="15" style="border:1px solid rgb(87, 87, 87);border-collapse:collapse; float: left;width: 30%;">
+            <tr style="color: white;">
+                <td align="center" style="background-color: rgb(59, 59, 59); border-bottom: none;">
+                    <p style="font-size: larger;">Bull Shark(Built for gaming)</p>
+                </td>
+            </tr>
+            <tr>
+                 <Td align="center"><img src="banner for latop/Laptop/Nitro 5.png" height="500" width="100%"></Td>
+            </tr>
+            <tr>
+                <td style="background-color: #595959; font-size: smaller;text-align: left" class="sizingfortext">
+                    <h1 style="font-weight: bold;">
+                        Laptop Specs
+                    </h1>
+                    <p style="font-size: larger; color: white;">
+                        2 Year Warranty<br/>
+                        RTX 3080<br/>
+                        Windows 10 Home<br/>
+                        Ryzen 9 5900H<br/>
+                        17 Inch<br/>
+                        1 TB SSD<br/>
+                        24GB RAM
+                        <p style="color: white;">SGD <b style="color: red; font-weight: bold; font-size: larger; ">3000</b> </p>
+                        <a href="check out laptop/Bull Shark.html" class="select">Select</a>
+                </td>
+            </tr>
+        </table>
+    
+    <!--Footer -->
+    <footer style="clear: left;">
+        <div class="product" align="center">
+        <table class="footer.list" cellspacing="5" cellpadding="15">
+            <tr style="text-align: left;">
+                <th >Products</th>
+                <th>Company</th>
+                <th>Need Help?</th>
+                <th></th>
+                <th>Contact Us</th>
+            </tr>
+            <tr>
+                <td><a class="footerhyper" href="Laptop.html">Laptops</a></td>
+                <td><a class="footerhyper" href="Product.html">About</a></td>
+                <td><a class="footerhyper" href="aboutus.html">Support</a></td>
+                <td></td>
+                <td class="fonting">Contact us : +65 9126 2789</td>
+            </tr>
+            <tr>
+                <td><a class="footerhyper" href="desktop.html">Desktops</a></td>
+                <td><a class="footerhyper" href="aboutus.html">Contact</a></td>
+                <td><a class="footerhyper" href="aboutus.html">Warranty Info</a></td>
+                <td></td>
+                <td class="fonting">Address : 996 Bendmeer Rd #03-06 S339944</td>
+            </tr>
+            <tr>
+                <td><a class="footerhyper" href="Accessories.html">Accessories</a></td>
+                <td></td>
+                <td><a class="footerhyper" href="aboutus.html">FAQ</a></td>
+                <td></td>
+                <th align="left">Register your email for exclusive news, offers and giveaways! 
+                    <div>
+                        <input type="text" ></input><input type="submit"></input>
+                    </div></th>
+            </tr> 
+            
+        </table>
+        
+   
+    <div >
+        <a href="https://www.facebook.com/"><img src="icons/fblogo.png" height="40px" placeholder="facebook"></img></a>
+        <a href="https://www.instagram.com/"><img src="icons/iglogo.png" height="40px"></img></a>
+        <a href="https://twitter.com/?lang=en-sg"><img src="icons/twitterlogo.png"  height="40px"></img></a>
+    </div>
+    </div>
+    <div>
+    <p class="footer" style="margin-left: auto;">
+        Beforeshock &#169;2017 
+    </p>
+
+    </div>
+   
+</footer>
+    </body>
+</html>
