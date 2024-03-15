@@ -1,0 +1,1 @@
+dela_check("", "allmatched");
