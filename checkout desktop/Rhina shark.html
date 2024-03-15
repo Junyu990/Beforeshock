@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Before Shock | Home </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../Logo small.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <style>
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 17px;
+          padding: 8px;
+          color: white;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          margin: 0 -16px;
+        }
+        
+        .col-25 {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+        }
+        
+        .col-50 {
+          -ms-flex: 50%; /* IE10 */
+          flex: 50%;
+        }
+        
+        .col-75 {
+          -ms-flex: 75%; /* IE10 */
+          flex: 75%;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+          padding: 0 16px;
+        }
+        
+        .container {
+          background-color: #3a3a3a;
+          padding: 5px 20px 15px 20px;
+          border: 1px solid #3a3a3a;
+          border-radius: 3px;
+        }
+        
+        input[type=text] {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+        
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        .icon-container {
+          margin-bottom: 20px;
+          padding: 7px 0;
+          font-size: 24px;
+        }
+        
+        .btn {
+          background-color: #ff0000;
+          color: white;
+          padding: 12px;
+          margin: 10px 0;
+          border: none;
+          width: 100%;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 17px;
+        }
+        
+        .btn:hover {
+          background-color: #ff0000;
+        }
+        
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        
+        hr {
+          border: 1px solid lightgrey;
+        }
+        
+        span.price {
+          float: right;
+          color: rgb(255, 255, 255);
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+          .row {
+            flex-direction: column-reverse;
+          }
+          .col-25 {
+            margin-bottom: 20px;
+          }
+        }
+        </style>
+        </head>
+        <body>
+          <nav style="margin: 0%;">
+            <table>
+                <tr> 
+                    <td><a href="Home.html"><img src="../Logo.jpeg" width="300" height="75"></a></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Home.html" >Home</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Laptop.html">Laptops</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Desktop.html">Desktops</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Accessories.html" >Accessories</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="Product.html">About Us</a></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><button type="button" class="button"><a style="text-decoration:none" href="aboutus.html">Contact Us</a></button></td>
+                </tr>
+            </table>
+            </nav>
+        <img src="../naming/Untitled-7.png" width="150" height="35" align="center" style="text-align: center">
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form action="/action_page.php">
+              
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="New York">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <div style="margin-bottom: 5px">
+                  <a href="thankyou.html" class="btn">Continue to checkout</a>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="container">
+              <h4>Cart <span class="price" style="color:rgb(255, 255, 255)"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+              <p>Rhina Shark</span> $1369</p>
+
+              <hr>
+              <p>Total <span class="price" style="color:rgb(255, 0, 0)"><b>$1369</b></span></p>
+            </div>
+          </div>
+        </div>
+        <!--footer part-->
+        <footer style="clear: left;">
+          <div class="product" align="center">
+          <table class="footer.list" cellspacing="5" cellpadding="15">
+              <tr style="text-align: left; color: white;">
+                  <th >Products</th>
+                  <th>Company</th>
+                  <th>Need Help?</th>
+                  <th></th>
+                  <th>Contact Us</th>
+              </tr>
+              <tr>
+                  <td><a class="footerhyper" href="Laptop.html">Laptops</a></td>
+                  <td><a class="footerhyper" href="">About</a></td>
+                  <td><a class="footerhyper" href="">Support</a></td>
+                  <td></td>
+                  <td class="fonting" style="color: white;">Contact us : +65 9126 2789</td>
+              </tr>
+              <tr>
+                  <td><a class="footerhyper" href="desktop.html">Desktops</a></td>
+                  <td><a class="footerhyper" href="contactus.html">Contact</a></td>
+                  <td><a class="footerhyper" href="">Warranty Info</a></td>
+                  <td></td>
+                  <td class="fonting" style="color: white;">Address : 996 Bendmeer Rd #03-06 S339944</td>
+              </tr>
+              <tr>
+                  <td><a class="footerhyper" href="Accessories.html">Accessories</a></td>
+                  <td></td>
+                  <td><a class="footerhyper" href="">FAQ</a></td>
+                  <td></td>
+                  <th align="left">Register your email for exclusive news, offers and giveaways! 
+                      <div>
+                          <input type="text" ></input><input type="submit"></input>
+                      </div></th>
+              </tr> 
+              
+          </table>
+          
+     
+      <div >
+        <a href="https://www.facebook.com/"><img src="../icons/fblogo.png" height="40px" placeholder="facebook"></img></a>
+        <a href="https://www.instagram.com/"><img src="../icons/iglogo.png" height="40px"></img></a>
+        <a href="https://twitter.com/?lang=en-sg"><img src="../icons/twitterlogo.png"  height="40px"></img></a>
+      </div>
+      </div>
+      <div>
+      <p class="footer" style="margin-left: auto;">
+          Beforeshock &#169;2017 
+      </p>
+      </div>
+  </footer>
+        </body>
+        </html>
+        
